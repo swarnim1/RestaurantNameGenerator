@@ -1,5 +1,8 @@
 import streamlit as st 
-from AiApi import llm
+#from AiApi import llm
+from CustomLLM import CustomLLM
+
+llm = CustomLLM()
 
 
 cuisine = st.sidebar.selectbox("Pick a cuisine" , ("Indian","Italian","Mexican","lebenese","French"))
